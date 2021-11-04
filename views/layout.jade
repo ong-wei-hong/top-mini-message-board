@@ -1,7 +1,13 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+	head
+		title= 'Mini Message Board'
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		header(class='header')
+			a(href='/')
+				h1(class='title')='Mini Message Board'
+			a(href='/new')
+				button(class='new-message')='New message'
+		div(class='wrapper')
+			block content

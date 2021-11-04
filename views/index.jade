@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	h1(class='section')='Messages'
+	each message in messages
+		div(class='message-wrapper')
+			p(class='message-text')=message.text
+			p(class='italic')=message.user
+			p(class='message-added')='Sent at: ' + message.added
+

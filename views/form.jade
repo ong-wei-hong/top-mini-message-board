@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	h1(class='section')='Post a message'
+	form(method='POST' action='/new')
+		div(class='form-input')
+			label(for='message')='Message: '
+			input(type='text' name='message' placeholder='Share something' required)
+		div(class='form-input')
+			label(for='name')='Name: '
+			input(type='text' name='name' placeholder='Name' required)
+		div(class='form-input')
+			input(type='submit' value='Send' class='new-message')
