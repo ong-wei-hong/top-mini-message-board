@@ -15,4 +15,4 @@
 <p>go to <a href='localhost:3000'>localhost:3000</a></p>
 
 ## Note
-No database is used and the message is appended to the end of an initialised js array. So the message will disappear upon refresh.
+No database is used and the message is appended to the end of an initialised js array. So the message will disappear upon server reset.

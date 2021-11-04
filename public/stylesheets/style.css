@@ -68,6 +68,10 @@ body {
 	font-style: italic;
 }
 
+p {
+	margin-bottom: 2px;
+}
+
 /* wrapper */
 .wrapper {
 	padding: 1em;
